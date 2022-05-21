@@ -6,6 +6,8 @@
   "author": "Assad Isah <nottherealalanturing@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.0",
+    "axios": "^0.27.2",
     "babel-eslint": "10.x",
     "css-loader": "^6.7.1",
     "eslint": "7.x",
@@ -13,6 +15,7 @@
     "eslint-plugin-import": "2.x",
     "hint": "6.x",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.0",
     "style-loader": "^3.3.1",
     "stylelint": "13.x",
     "stylelint-config-standard": "21.x",
@@ -22,9 +25,7 @@
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0",
-    "webpack-merge": "^5.8.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.18.0",
-    "jest": "^28.1.0"
+    "webpack-merge": "^5.8.0"
   },
   "scripts": {
     "build": "webpack --config webpack.prod.js",
