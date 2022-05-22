@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.nav-list {
+  display: none;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 2px solid #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 25px;
+}
+
+.nav-btn {
+  width: 25px;
+}
+
+.nav-mob {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.562);
+  display: none;
+}
+
+.mob-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.mob-nav-item {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+.mob-nav-item a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
