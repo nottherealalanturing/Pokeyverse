@@ -14,7 +14,6 @@
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
-    "import/no-extraneous-dependencies": "off",
     "import/extensions": [
       1,
       {
