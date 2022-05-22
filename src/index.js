@@ -1,4 +1,6 @@
-import { logoDOM, mobNavigation, navBtnImg, navToggler } from './modules/dom-elements.js';
+import {
+  logoDOM, mobNavigation, navBtnImg, navToggler,
+} from './modules/dom-elements.js';
 import { hamburger, pokemonLogo } from './modules/images.js';
 import './style.css';
 
