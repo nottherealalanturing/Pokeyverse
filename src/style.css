@@ -102,12 +102,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 20px;
 }
 
 .character-item:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
 .character-likes-details {
@@ -138,11 +138,18 @@ footer {
   background-color: #aebfc1;
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
-  color: #000000;
+  color: #000;
   display: flex;
-  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family:
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
@@ -150,11 +157,10 @@ footer {
   padding: 0.75rem 1.65rem;
   position: relative;
   text-align: center;
-  text-decoration: none #000000 solid;
+  text-decoration: none #000 solid;
   text-decoration-thickness: auto;
   width: 100%;
   max-width: 460px;
-  position: relative;
   cursor: pointer;
   transform: rotate(-2deg);
   user-select: none;
@@ -166,17 +172,17 @@ footer {
   outline: 0;
 }
 
-.character-item-btn:after {
+.character-item-btn::after {
   content: '';
   position: absolute;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   bottom: 4px;
   left: 4px;
   width: calc(100% - 1px);
   height: calc(100% - 1px);
 }
 
-.character-item-btn:hover:after {
+.character-item-btn:hover::after {
   bottom: 2px;
   left: 2px;
 }
@@ -195,6 +201,7 @@ footer {
     margin-left: 20%;
     margin-right: 20%;
   }
+
   .character-item-btn {
     padding: 0.75rem 3rem;
     font-size: 1.25rem;
