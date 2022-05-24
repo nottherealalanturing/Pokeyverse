@@ -32,6 +32,7 @@
     "watch": "webpack --watch",
     "start": "webpack serve --open --config webpack.dev.js",
     "esfix": "pnpm dlx eslint . --fix",
+    "styp": "stylelint \"**/*.{css,scss}\" --fix",
     "test": "jest"
   }
 }
