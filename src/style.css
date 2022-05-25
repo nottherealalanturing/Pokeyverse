@@ -18,12 +18,15 @@ li {
 }
 
 .nav {
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .nav-list {
@@ -95,7 +98,10 @@ footer {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .character-item {
@@ -140,16 +146,8 @@ footer {
   box-sizing: border-box;
   color: #000;
   display: flex;
-  font-family:
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    'Noto Sans',
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    'Noto Color Emoji';
+  font-family: Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
@@ -198,8 +196,8 @@ footer {
   }
 
   .nav {
-    margin-left: 20%;
-    margin-right: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   .character-item-btn {
