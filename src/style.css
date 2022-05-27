@@ -41,7 +41,13 @@ li {
   text-decoration: none;
 }
 
+main {
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
 footer {
+  background-color: #fff;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -161,7 +167,7 @@ footer {
   text-align: center;
   text-decoration: none #000 solid;
   text-decoration-thickness: auto;
-  width: 100%;
+  width: 80%;
   max-width: 460px;
   cursor: pointer;
   transform: rotate(-2deg);
@@ -180,8 +186,8 @@ footer {
   border: 1px solid #000;
   bottom: 4px;
   left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
 }
 
 .character-item-btn:hover::after {
