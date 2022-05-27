@@ -6,9 +6,8 @@ import {
   navBtnImg,
   navToggler,
 } from './modules/dom-elements.js';
-import {
-  hamburger, heart, pikachu, pokemonLogo,
-} from './modules/images.js';
+import { hamburger, heart, pikachu, pokemonLogo } from './modules/images.js';
+import { getList } from './modules/pokeData.js';
 import './style.css';
 
 logoDOM.src = pokemonLogo;
@@ -27,3 +26,5 @@ mobNavigation.addEventListener('click', (event) => {
 
 charImage.src = pikachu;
 charItemLikeIcon.src = heart;
+
+getList();
