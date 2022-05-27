@@ -29,6 +29,13 @@ li {
   box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
 
+.mob-nav-item a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  padding: 20px;
+}
+
 .nav-list {
   display: none;
 }
@@ -100,13 +107,6 @@ footer {
   text-align: center;
 }
 
-.mob-nav-item a {
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  padding: 20px;
-}
-
 .charaters-grid {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -164,8 +164,16 @@ footer {
   box-sizing: border-box;
   color: #000;
   display: flex;
-  font-family: Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family:
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
