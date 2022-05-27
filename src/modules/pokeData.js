@@ -1,4 +1,6 @@
+/* eslint-disable */
 const axios = require('axios').default;
+/* eslint-enable */
 
 export const getList = async (limit = 40) => {
   const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?offset=20&limit=${limit}`);
