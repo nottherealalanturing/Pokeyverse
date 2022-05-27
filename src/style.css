@@ -39,6 +39,14 @@ li {
 
 .nav-item a {
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item a:hover {
+  font-size: 20px;
+  font-weight: 900;
 }
 
 main {

@@ -1,5 +1,5 @@
-import { charactersGrid } from './dom-elements';
-import { getItems } from './pokeData';
+import { charactersGrid } from './dom-elements.js';
+import { getItems } from './pokeData.js';
 
 export const addItemsToDOM = async () => {
   const pocketMonsters = await getItems();
