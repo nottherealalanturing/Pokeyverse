@@ -1,10 +1,17 @@
 const axios = require('axios').default;
 
-export const getList = (limit = 40) => {
-  axios
-    .get(`https://pokeapi.co/api/v2/pokemon?offset=20&limit=${limit}`)
-    .then((response) => response.data.results)
-    .catch((err) => err);
+export const getList = async (limit = 40) => {
+  const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?offset=20&limit=${limit}`);
+
+  return response.data.results;
 };
 
-export const r = 2;
+export const getItems = async () => {
+  const data = await getList();
+  const pocketMonsters = data.map(async (element) => {
+    const pocketMonster = await axios.get(`https://pokeapi.co/api/v2/pokemon/${element.name}`);
+    return pocketMonster;
+  });
+
+  return pocketMonsters;
+};

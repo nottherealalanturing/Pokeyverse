@@ -13,6 +13,7 @@
     "eslint-config-airbnb-base": "14.x",
     "eslint-plugin-import": "2.x",
     "hint": "6.x",
+    "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.0",
     "style-loader": "^3.3.1",
