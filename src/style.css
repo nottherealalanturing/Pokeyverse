@@ -116,6 +116,10 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
+.character-item-name {
+  text-transform: uppercase;
+}
+
 .character-likes-details {
   display: flex;
   align-items: center;
@@ -146,16 +150,8 @@ footer {
   box-sizing: border-box;
   color: #000;
   display: flex;
-  font-family:
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    'Noto Sans',
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    'Noto Color Emoji';
+  font-family: Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;

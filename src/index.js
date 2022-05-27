@@ -10,8 +10,8 @@ import { addItemsToDOM } from './modules/domManipulators.js';
 import { hamburger, heart, pikachu, pokemonLogo } from './modules/images.js';
 import './style.css';
 
-logoDOM.src = pokemonLogo;
-navBtnImg.src = hamburger;
+/* logoDOM.src = pokemonLogo;
+navBtnImg.src = hamburger; */
 
 navToggler.addEventListener('click', (e) => {
   e.preventDefault();
@@ -24,7 +24,7 @@ mobNavigation.addEventListener('click', (event) => {
   }
 });
 
-charImage.src = pikachu;
-charItemLikeIcon.src = heart;
+/* charImage.src = pikachu;
+charItemLikeIcon.src = heart; */
 
 addItemsToDOM();
