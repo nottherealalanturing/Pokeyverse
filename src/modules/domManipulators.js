@@ -32,10 +32,11 @@ export const showComment = async (pokemonName) => {
   ul.classList.add('comment-list');
   ul.innerHTML = '';
   pocketMonsterComment.data.forEach((comment) => {
-    ul.innerHTML += `<li class="comment-list-item">${comment.creation_date} ${comment.username} ${comment.comment} </li>`;
+    ul.innerHTML += `<li class="comment-list-item">${comment.creation_date}: ${comment.username} - “${comment.comment}” </li>`;
   });
   /* console.log(ul);
   console.log(pocketMonsterComment.data); */
+
   const item = `<article class="comment-modal-content">
         <h1 class="modal-comment-title">${pokemonName}</h1>
         <img src="${
@@ -43,12 +44,19 @@ export const showComment = async (pokemonName) => {
         }" alt="${pokemonName}" class="modal-comment-image" />
         <ul class="modal-comment-attributes">
           <li>Ability: ${pocketMonsterData.data.abilities[0].ability.name}</li>
-          <li>Held-Item: ${pocketMonsterData.data.held_items[0].item.name}</li>
+          <li>Held-Item: ${pocketMonsterData.data.held_items[0].item.name || ''}</li>
           <li>Move: ${pocketMonsterData.data.moves[0].move.name}</li>
           <li>Weight: ${pocketMonsterData.data.weight}</li>
         </ul>
         <h2 class="comment-header">Comments ${0}</h2>
         ${ul.outerHTML}
+
+        <h2 class="comment-header">Add a comment</h2>
+        <form class="commentForm" action="#">
+        <input name="name" id="name" for="name" placeholder="Your name" />
+        <textarea name="insights" id="insights" cols="30" rows="10">Your insights</textarea>
+        <button type="button" role="button" id="commentSubmitBtn" class="character-item-btn">Comment</button>
+        </form>
         </article>`;
 
   commentModal.innerHTML = item;
