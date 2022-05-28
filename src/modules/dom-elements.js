@@ -11,3 +11,5 @@ export const charItemLikes = document.querySelector('.character-item-likes');
 export const charItemLikeIcon = document.querySelector('.like-icon');
 export const charItemCommentsBtn = document.querySelector('.charaters-item-comments-btn');
 export const charItemReserveBtn = document.querySelector('.charaters-item-reserve-btn');
+export const commentModal = document.querySelector('.comment-modal');
+export const body = document.querySelector('.body');

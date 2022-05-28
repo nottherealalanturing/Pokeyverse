@@ -238,6 +238,16 @@ footer {
   font-weight: 700;
 }
 
+.comment-header {
+  padding: 10px;
+}
+
+.comment-list {
+}
+
+.comment-list-item {
+}
+
 @media only screen and (min-width: 768px) {
   .nav-btn {
     display: none;
