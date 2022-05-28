@@ -14,3 +14,9 @@ mobNavigation.addEventListener('click', (event) => {
 });
 
 addItemsToDOM();
+
+document.body.addEventListener('click', (event) => {
+  if (event.target.className === 'character-item-btn') {
+    console.log(event.target.dataset.pokemon);
+  }
+});

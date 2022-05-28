@@ -17,7 +17,7 @@ export const addItemsToDOM = async () => {
         <img src="${pocketMonster.data.sprites.front_default}" alt="${pocketMonster.data.name}" class="character-item-img" />
         <div class="character-item-container">
           <h1 class="character-item-name">${pocketMonster.data.name}</h1>
-          <button type="button" role="button" class="character-item-btn">Comments</button>
+          <button type="button" data-pokemon="${pocketMonster.data.name}" role="button" class="character-item-btn">Comments</button>
           <button type="button" role="button" class="character-item-btn">Reservations</button>
         </div>
       </article>`;
@@ -25,4 +25,6 @@ export const addItemsToDOM = async () => {
   });
 };
 
-export const p = 3;
+export const showComment = (e) => {
+  console.log(e);
+};

@@ -212,6 +212,7 @@ footer {
   left: 0;
   padding-top: 10%;
   overflow: auto;
+  display: none;
 }
 
 .comment-modal-content {
