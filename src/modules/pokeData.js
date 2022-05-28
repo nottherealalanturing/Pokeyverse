@@ -17,3 +17,19 @@ export const getItems = async () => {
 
   return pocketMonsters;
 };
+
+export const getComments = async () => {
+  const response = await axios.get(
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/CisWXdJNG310YdGvPs91/likes/'
+  );
+  return response;
+};
+
+export const postComment = async (item) => {
+  await axios.post(
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/CisWXdJNG310YdGvPs91/likes/',
+    {
+      item_id: `${item}`,
+    }
+  );
+};
