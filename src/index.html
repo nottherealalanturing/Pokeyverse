@@ -26,9 +26,21 @@
     <main class="charaters-grid"></main>
     <div class="comment-modal">
       <article class="comment-modal-content">
-        <h1 class="modal-comment-title">Pikachu</h1>
-        <img src="./assets/pokemon-logo.png" alt=" " class="modal-comment-image" />
-        <ul class="modal-comment-attributes"></ul>
+        <h1 class="modal-comment-title"></h1>
+        <img src="./assets/spinner.gif" alt="${pokemonName}" class="modal-comment-image" />
+        <ul class="modal-comment-attributes">
+          <li></li>
+        </ul>
+        <h2 class="comment-header"></h2>
+        <ul class="comment-list"></ul>
+        <h2 class="comment-header">Add a comment</h2>
+        <form class="commentForm" action="#">
+          <input name="name" id="name" for="name" placeholder="Your name" />
+          <textarea name="insights" id="insights" cols="30" rows="10">Your insights</textarea>
+          <button type="submit" role="button" id="commentSubmitBtn" class="character-item-btn">
+            Comment
+          </button>
+        </form>
       </article>
     </div>
     <footer>nottherealalanturing © 2022</footer>
