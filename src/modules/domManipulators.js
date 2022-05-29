@@ -1,4 +1,6 @@
+/* eslint-disable */
 import axios from 'axios';
+/* eslint-enable */
 import {
   charactersGrid,
   commentForm,
