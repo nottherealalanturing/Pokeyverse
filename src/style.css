@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 *,
 *::before,
@@ -10,11 +10,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
-
-li {
-  list-style-type: none;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 .nav {
@@ -165,7 +161,7 @@ footer {
   color: #000;
   display: flex;
   font-family:
-    Roboto,
+    Inter,
     'Helvetica Neue',
     Arial,
     'Noto Sans',
@@ -209,6 +205,114 @@ footer {
 .character-item-btn:hover::after {
   bottom: 2px;
   left: 2px;
+}
+
+.comment-modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.37);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 10%;
+  overflow: auto;
+  display: none;
+}
+
+.comment-modal-content {
+  background: #fff;
+  border-radius: 0.5em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  max-width: 90%;
+  position: absolute;
+  top: calc(50% - 30px);
+  transform: translate(-50%, -50%);
+  width: 30em;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  overflow: auto;
+}
+
+.modal-comment-attributes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  list-style-type: circle;
+}
+
+.modal-comment-attributes li {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.modal-comment-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+  align-self: center;
+  position: relative;
+}
+
+.modal-comment-title::after {
+  content: '';
+  position: absolute;
+  width: 55px;
+  height: 1px;
+  background-color: #ec5242;
+  bottom: -16px;
+  left: calc(50% - 27px);
+}
+
+.comment-header {
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+  align-self: center;
+  position: relative;
+  margin: 5px;
+}
+
+.comment-header::after {
+  content: '';
+  position: absolute;
+  width: 55px;
+  height: 1px;
+  background-color: #ec5242;
+  bottom: 6px;
+  left: calc(50% - 27px);
+}
+
+.comment-list {
+  list-style-type: none;
+}
+
+.comment-list-item {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.commentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#name {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#insights {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#commentSubmitBtn {
+  align-self: center;
 }
 
 @media only screen and (min-width: 768px) {

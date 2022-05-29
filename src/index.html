@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PokeyVerse</title>
   </head>
-  <body>
+  <body class="body">
     <nav class="nav">
       <a href="/"><img src="./assets/pokemon-logo.png" alt="logo" class="logo" /></a>
       <a href="#" class="nav-toggler">
@@ -24,6 +24,23 @@
     </div>
 
     <main class="charaters-grid"></main>
+    <div class="comment-modal">
+      <article class="comment-modal-content">
+        <h1 class="modal-comment-title">_</h1>
+        <img src="./assets/spinner.gif" alt="${pokemonName}" class="modal-comment-image" />
+        <ul class="modal-comment-attributes">
+          <li></li>
+        </ul>
+        <h2 class="comment-header"></h2>
+        <ul class="comment-list"></ul>
+        <h2 class="comment-header">Add a comment</h2>
+        <form class="commentForm" action="#">
+          <input name="name" id="name" placeholder="Your name" />
+          <textarea name="insights" id="insights" cols="30" rows="10">Your insights</textarea>
+          <button type="submit" id="commentSubmitBtn" class="character-item-btn">Comment</button>
+        </form>
+      </article>
+    </div>
     <footer>nottherealalanturing © 2022</footer>
   </body>
 </html>
