@@ -43,10 +43,10 @@ export const showComment = async (pokemonName) => {
           pocketMonsterData.data.sprites.other['official-artwork'].front_default
         }" alt="${pokemonName}" class="modal-comment-image" />
         <ul class="modal-comment-attributes">
-          <li>Ability: ${pocketMonsterData.data.abilities[0].ability.name}</li>
+          <li>Ability: ${pocketMonsterData.data.abilities[0].ability.name || ''}</li>
           <li>Held-Item: ${pocketMonsterData.data.held_items[0].item.name || ''}</li>
-          <li>Move: ${pocketMonsterData.data.moves[0].move.name}</li>
-          <li>Weight: ${pocketMonsterData.data.weight}</li>
+          <li>Move: ${pocketMonsterData.data.moves[0].move.name || ''}</li>
+          <li>Weight: ${pocketMonsterData.data.weight || ''}</li>
         </ul>
         <h2 class="comment-header">Comments ${0}</h2>
         ${ul.outerHTML}

@@ -13,10 +13,6 @@ html {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
-li {
-  list-style-type: none;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -235,7 +231,8 @@ footer {
 .modal-comment-attributes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 1px;
+  list-style-type: circle;
 }
 
 .modal-comment-attributes li {
@@ -268,6 +265,7 @@ footer {
   line-height: normal;
   align-self: center;
   position: relative;
+  margin: 5px;
 }
 
 .comment-header::after {
@@ -276,8 +274,12 @@ footer {
   width: 55px;
   height: 1px;
   background-color: #ec5242;
-  bottom: -16px;
+  bottom: 6px;
   left: calc(50% - 27px);
+}
+
+.comment-list {
+  list-style-type: none;
 }
 
 .comment-list-item {
@@ -291,8 +293,14 @@ footer {
   gap: 5px;
 }
 
+#name {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
 #insights {
   margin-bottom: 10px;
+  padding: 5px;
 }
 
 #commentSubmitBtn {
