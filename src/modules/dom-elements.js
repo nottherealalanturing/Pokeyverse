@@ -17,7 +17,6 @@ export const commentModalImage = document.querySelector('.modal-comment-image');
 export const commentModalAttributes = document.querySelector('.modal-comment-attributes');
 export const commentList = document.querySelector('.comment-list');
 export const commentForm = document.querySelector('.commentForm');
-
 export const body = document.querySelector('.body');
 export const nameComment = document.querySelector('#name');
 export const insightComment = document.querySelector('#insights');
