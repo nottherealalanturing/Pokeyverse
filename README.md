@@ -9,6 +9,7 @@ A website that displays different pokemons.
 - HTML, CSS and Javascript
 - Linters (Lighthouse, Webhint, Stylelint, Eslint)
 - Git/GitHub work-flow
+- Axios
 
 ## Link
 
