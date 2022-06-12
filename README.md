@@ -12,7 +12,7 @@ A website that displays different pokemons.
 
 ## Link
 
-[Pokeyverse](https://nottherealalanturing.github.io/pokeyverse)
+[Pokeyverse](https://nottherealalanturing.github.io/Pokeyverse)
 
 ### Installation
 
