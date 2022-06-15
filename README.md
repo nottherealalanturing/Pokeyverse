@@ -2,7 +2,7 @@
 
 # Pokeyverse
 
-A website that displays different pokemons.
+A website bundled with webpack that renders pokemons from the pokeapi and stores comments as well through the Involvement api.
 
 ## Built With 🔨
 
