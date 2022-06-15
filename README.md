@@ -2,7 +2,7 @@
 
 # Pokeyverse
 
-A website bundled with webpack that renders pokemons from the pokeapi and stores comments as well through the Involvement api.
+A website bundled with webpack renders pokemon from the pokeapi and stores comments through the Involvement api.
 
 ## Built With 🔨
 
