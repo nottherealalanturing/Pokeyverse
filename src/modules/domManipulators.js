@@ -27,7 +27,7 @@ export const addItemsToDOM = async () => {
         <img src="${pocketMonster.data.sprites.other['official-artwork'].front_default}" alt="${pocketMonster.data.name}" class="character-item-img" />
         <div class="character-item-container">
           <h1 class="character-item-name">${pocketMonster.data.name}</h1>
-          <button type="button" data-pokemon="${pocketMonster.data.name}" role="button" class="character-item-btn comment-btn">Comments</button>
+          <button type="button" data-pokemon="${pocketMonster.data.name}" role="button" class="character-item-btn comment-btn">view</button>
         </div>
       </article>`;
     charactersGrid.innerHTML += item;
